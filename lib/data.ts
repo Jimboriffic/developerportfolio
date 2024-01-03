@@ -3,7 +3,7 @@ import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import dadJokes from "@/public/landingPage.gif";
-import randomChoice from "@/public/randomchoice.png";
+import randomChoice from "@/public/randomChoice.png";
 import roboFriends from "@/public/roboFriends.png";
 
 export const links = [
