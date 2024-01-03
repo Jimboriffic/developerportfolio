@@ -8,15 +8,18 @@ import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload} from "react-icons/hi";
 import { FaGithubSquare } from 'react-icons/fa';
 import { useSectionInView } from '@/lib/hooks';
+import { useActiveSectionContext } from '@/context/active-section-context';
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
+  const { setActiveSection, setTimeOfLastClick } 
+  = useActiveSectionContext();
   
   return (
     <section 
     ref={ref} 
     id="home" 
-    className="mb-28 max-w-[50rem] text-center sm:text-right scroll-mt-[100rem] transition">
+    className="mb-28 mx-auto max-w-[50rem] text-center sm:text-right scroll-mt-[100rem] transition">
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div 
@@ -80,11 +83,18 @@ export default function Intro() {
 
           <Link
             href="#contact"
-            className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none 
-            focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition outline-none focus:scale-110 hover-scale-110
+            className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full 
+            outline-none 
+            focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-110 transition 
+            outline-none focus:scale-110 hover:scale-105
             hover:bg-gray-950 active:scale-105 transition scroll-mt-20">
             Contact me here <BsArrowRight 
-            className="opacity-70 group:hover:translate-x-1 transition" />
+            className="opacity-70 group:hover:translate-x-1 transition" 
+            onClick={() => {
+              setActiveSection("Contact");
+              setTimeOfLastClick(Date.now());
+            }}
+            />
             
           </Link>
 
@@ -93,8 +103,8 @@ export default function Intro() {
       
             className="group bg-white text-black px-7 py-3 flex items-center 
             gap-2 rounded-full outline-none focus:scale-110
-            hover:scale-110 hover:bg-white active:scale-105 hover:text-gray-950
-             opacity-60 group-hover:translate-y-1 transition cursor-pointer border border-black/10"
+            hover:scale-105 hover:bg-white active:scale-105 hover:text-gray-950
+             opacity-60 group-hover:translate-y-1 transition cursor-pointer borderBlack"
               href="/CV.pdf"
               download 
               >

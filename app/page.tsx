@@ -4,6 +4,8 @@ import Projects from './components/projects';
 import SectionDivider from './components/sectionDivider';
 import SectionDivider2 from './components/sectionDivider2'
 import Skills from './components/skills';
+import Experience from './components/experience';
+import Contact from './components/contact';
 
 export default function Home() {
   return (
@@ -14,8 +16,14 @@ export default function Home() {
     <div className="-mt-16">
     <SectionDivider2 />
     </div>
+    <div className="mt-20">
     <Projects />
+    </div>
     <Skills />
+    <div className="mt-16">
+    <Experience />
+    <Contact />
+    </div>
   </main>
   );
 }

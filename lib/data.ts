@@ -35,10 +35,10 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Udemy Course",
-    location: "Online",
+    title: "Complete Web Developer in 2020 course",
+    location: "Udemy",
     description:
-      "I finished the course in 3 months.",
+      "My background is in Tourism management and business administration. I got my bachelor's degree in 2014. After that I started working both in the Netherlands and abroad. I finished the Complete Web Developer by Andrea Neagoie in 2020 in a five month time span.",
     icon: React.createElement(LuGraduationCap),
     date: "2020",
   },
@@ -46,7 +46,7 @@ export const experiencesData = [
     title: "Online marketeer",
     location: "Rotterdam, The Netherlands",
     description:
-      "I worked as a growth hacker for 1 year in 1 job and 1 year in another job as content marketeer.",
+      "I worked as a growth hacker at Vakanties.nl and after that I went to Amazon RBS (Retail business services) where I was employed for two years and focused mostly on cross channel communication between vendors and several marketplaces, before I made a switch to online marketing again. At Holland Watch Group I worked as a content marketeer in 2021 and 2022",
     icon: React.createElement(CgWorkAlt),
     date: "2019 - 2022",
   },
@@ -54,7 +54,7 @@ export const experiencesData = [
     title: "Full-Stack Developer",
     location: "Rotterdam, The Netherlands",
     description:
-      "I'm now a full-stack developer trainee. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "I'm now a full-stack developer self study student. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
     icon: React.createElement(FaReact),
     date: "2023 - present",
   },

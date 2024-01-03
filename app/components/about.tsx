@@ -10,7 +10,7 @@ export default function About() {
 
   return (
     <motion.section
-      className="mb-2 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
+      className="mb-2 max-w-[45rem] leading-8 sm:mb-40 scroll-mt-28 sm:text-center"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
@@ -18,7 +18,7 @@ export default function About() {
       id="About"
     >
       <SectionHeading>About me</SectionHeading>
-      <p className="mb-3">
+      <p className="mb-3 sm:text-center">
         After working as a TEFL teacher and{" "}
         <span className="font-medium">Online Marketeer</span>, I decided to
         pursue my passion for development. I completed a Udemy course on web
@@ -42,8 +42,7 @@ export default function About() {
 
       <p>
         <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, skateboarding and snowboarding, and spending time with my
-        girlfriend and friends. I also enjoy{" "}
+        video games, skateboarding and snowboarding, and travelling. I also enjoy{" "}
         <span className="font-medium">languages</span>. I am currently improving{" "}
         <span className="font-medium">both my Spanish and German</span>. Besides
         that, I love listening to and creating music.
