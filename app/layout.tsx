@@ -21,7 +21,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="!scroll-smooth">
+     <html lang="en" className="!scroll-smooth">
+      <head>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        </head>
+  
       <body 
       className={`${inter.className} bg-gray-300 text-gray-950
       relative pt-28 sm:pt-36
