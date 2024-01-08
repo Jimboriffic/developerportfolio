@@ -29,7 +29,7 @@ export default function Project({
         scale: scaleProgress,
         opacity: opacityProgress,
       }}
-      className="group mb-3 sm:mb-8 last:mn-0"
+      className="group mb-3 sm:mb-8 last:mb-0"
     >
       <section
         className="group 
@@ -40,7 +40,7 @@ export default function Project({
       sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20"
       >
         <div
-          className="pt-4 pb-7 px-6 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem] dark:bg-black/10"
+          className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]"
         >
           <h3 className="text-2xl font-semibold dark:text-gray-100">{title}</h3>
           <p className="mt-2 leading-relaxed text-gray-700 pb-6 dark:text-gray-40 dark:text-white/90">
@@ -49,10 +49,7 @@ export default function Project({
           <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
             {tags.map((tag, index) => (
               <li
-                className="bg-black/[0.6] px-2 py-2 text-[0.7rem] 
-            uppercase tracking-wider
-             text-white rounded-full
-             mx-1"
+                className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
                 key={index}
               >
                 {tag}
