@@ -36,8 +36,8 @@ export default function Project({
     bg-gray-100 
     max-w-[42rem] borderBlack rounded-lg
      overflow-hidden sm:pr-8 
-     relative wm:h-[20rem] hover:bg-gray-200 border
-      border-black/20 transition group-even:pl-7 dark:bg-black"
+     relative sm:h-[20rem] hover:bg-gray-200 border transition
+      sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20"
       >
         <div
           className="pt-4 pb-7 px-6 sm:pl-10 sm:pr-2 sm:pt-10
