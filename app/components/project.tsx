@@ -40,8 +40,7 @@ export default function Project({
       sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20"
       >
         <div
-          className="pt-4 pb-7 px-6 sm:pl-10 sm:pr-2 sm:pt-10
-        sm:max-w-[50%] flex flex-col h-full group-even:ml-[20rem] dark:bg-black/10"
+          className="pt-4 pb-7 px-6 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem] dark:bg-black/10"
         >
           <h3 className="text-2xl font-semibold dark:text-gray-100">{title}</h3>
           <p className="mt-2 leading-relaxed text-gray-700 pb-6 dark:text-gray-40 dark:text-white/90">
