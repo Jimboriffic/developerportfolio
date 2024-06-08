@@ -19,7 +19,8 @@ export default function Intro() {
     <section 
     ref={ref} 
     id="home" 
-    className="mb-28 mx-auto max-w-[50rem] text-center scroll-mt-[100rem] transition">
+    className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
+      >
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div 
@@ -37,7 +38,7 @@ export default function Intro() {
               height="120"
               quality="95"
               priority={true}
-              className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl sm:center"
+              className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
             />
 
           </motion.div>
@@ -60,7 +61,7 @@ export default function Intro() {
 
       
         <motion.h1 
-        className="max-w-2xl mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5]"
+        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
         >
@@ -71,12 +72,13 @@ export default function Intro() {
           <span className="underline"> React (Next.js)</span>.
         </motion.h1>
 
-        <motion.div className="flex flex-row sm:flex-row items-center justify-center gap-2 px-4
+        <motion.div 
+        className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4
         text-lg font-medium"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y:0 }}
         transition={{
-        delay: 0.2,
+        delay: 0.1,
         transition: 0.5,
           }}
         >

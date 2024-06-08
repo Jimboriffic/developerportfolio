@@ -11,9 +11,10 @@ export default function Home() {
   return (
   <main className="flex flex-col items-center px-4">
     <Intro />
-    <SectionDivider />
+    <div className="mt-14">
     <About />
-    <div className="-mt-16">
+    </div>
+    <div className="-mt-18">
     <SectionDivider2 />
     </div>
     <div className="mt-20">

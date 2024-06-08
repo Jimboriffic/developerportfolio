@@ -2,7 +2,7 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import dadJokes from "@/public/landingPage.gif";
+import landingPage from "@/public/landingPage.gif";
 import movieDatabase from "@/public/movieDatabase.gif";
 import roboFriends from "@/public/roboFriends.png";
 import pokedex from "@/public/pokedex.png";
@@ -67,7 +67,8 @@ export const projectsData = [
     description:
       "Split landing page made with HTML, CSS and Javascript",
     tags: ["Vanilla JS", "HTML", "CSS", "Landing Page", "Design"],
-    imageUrl: dadJokes,
+    imageUrl: landingPage,
+    linkUrl: 'https://github.com/Jimboriffic/Split-landing-page',
   },
   {
     title: "Movie Database",
@@ -75,6 +76,7 @@ export const projectsData = [
       "A movie database complete with images and description, made possible thanks to the moviedb api",
     tags: ["Javascript", "HTML", "CSS", "Vanilla JS", "API"],
     imageUrl: movieDatabase,
+    linkUrl: "https://jimboriffic.github.io/moviedatabase.github.io/",
   },
   {
     title: "Robot friends",
@@ -82,6 +84,7 @@ export const projectsData = [
       "My first React project. A simple database with search functionality",
     tags: ["React", "Javascript", "HTML", "CSS", "Typescript"],
     imageUrl: roboFriends,
+    linkUrl: "https://jimboriffic.github.io/robovrienden/",
   },
   {
     title: "Pokédex",
@@ -89,6 +92,7 @@ export const projectsData = [
       "First generation pokédex created using html, css, and javascript and the pokeapi",
     tags: ["HTML", "CSS", "Javascript", "API", "Async await"],
     imageUrl: pokedex,
+    linkUrl: "https://github.com/Jimboriffic/first-gen-pokedex",
   }
 ] as const;
 

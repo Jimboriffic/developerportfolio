@@ -10,15 +10,15 @@ export default function About() {
 
   return (
     <motion.section
-    className="mb-28 text-center leading-8 sm:mb-40 scroll-mt-28 md:max-w-2xl"
+    className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28 border border-gray-300 rounded-lg bg-white dark:bg-gray-800 dark:border-gray-600 shadow-lg p-8 shadow-lg dark:shadow-md p-8"
     initial={{ opacity: 0, y: 100 }}
     animate={{ opacity: 1, y: 0 }}
     transition={{ delay: 0.175 }}
     ref={ref}
-    id="About"
+    id="about"
     >
       <SectionHeading>About me</SectionHeading>
-      <p className="mb-2">
+      <p className="mb-3">
         After working as a TEFL teacher and{" "}
         <span className="font-medium">Online Marketeer</span>, I decided to
         pursue my passion for development. I completed a Udemy course on web
