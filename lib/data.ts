@@ -3,8 +3,9 @@ import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import dadJokes from "@/public/landingPage.gif";
-import randomChoice from "@/public/randomChoice.png";
+import movieDatabase from "@/public/movieDatabase.gif";
 import roboFriends from "@/public/roboFriends.png";
+import pokedex from "@/public/pokedex.png";
 
 export const links = [
   {
@@ -69,11 +70,11 @@ export const projectsData = [
     imageUrl: dadJokes,
   },
   {
-    title: "Random Choice",
+    title: "Movie Database",
     description:
-      "A small, but neat javascript app that lets the user input options. When enter is pressed a random option is selected",
-    tags: ["Javascript", "HTML", "CSS", "Vanilla JS", "DOM manipulation"],
-    imageUrl: randomChoice,
+      "A movie database complete with images and description, made possible thanks to the moviedb api",
+    tags: ["Javascript", "HTML", "CSS", "Vanilla JS", "API"],
+    imageUrl: movieDatabase,
   },
   {
     title: "Robot friends",
@@ -82,6 +83,13 @@ export const projectsData = [
     tags: ["React", "Javascript", "HTML", "CSS", "Typescript"],
     imageUrl: roboFriends,
   },
+  {
+    title: "Pokédex",
+    description:
+      "First generation pokédex created using html, css, and javascript and the pokeapi",
+    tags: ["HTML", "CSS", "Javascript", "API", "Async await"],
+    imageUrl: pokedex,
+  }
 ] as const;
 
 export const skillsData = [
