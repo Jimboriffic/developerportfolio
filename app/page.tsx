@@ -6,6 +6,7 @@ import SectionDivider2 from './components/sectionDivider2'
 import Skills from './components/skills';
 import Experience from './components/experience';
 import Contact from './components/contact';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
     <div className="mt-16">
     <Experience />
     <Contact />
+    <SpeedInsights/>
     </div>
   </main>
   );
