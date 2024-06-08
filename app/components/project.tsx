@@ -44,7 +44,12 @@ export default function Project({
           className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]"
         >
           <h3 className="text-2xl font-semibold dark:text-gray-100 cursor-pointer"
-          onClick={() => window.open(linkUrl, '_blank')}>{title}</h3>
+          onClick={() => window.open(linkUrl, '_blank')}
+            onTouchStart={() => window.open(linkUrl, '_blank')}
+            >
+            {title}
+    
+          </h3>
           <p className="mt-2 leading-relaxed text-gray-700 pb-6 dark:text-gray-40 dark:text-white/90">
             {description}
           </p>
