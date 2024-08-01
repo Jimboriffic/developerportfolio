@@ -76,7 +76,7 @@ export const projectsData = [
       "A movie database complete with images and description, made possible thanks to the moviedb api",
     tags: ["Javascript", "HTML", "CSS", "Vanilla JS", "API"],
     imageUrl: movieDatabase,
-    linkUrl: "https://jimboriffic.github.io/moviedatabase.github.io/",
+    linkUrl: "https://jimboriffic.github.io/moviedatabase/",
   },
   {
     title: "Robot friends",
