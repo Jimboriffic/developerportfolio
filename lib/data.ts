@@ -59,6 +59,13 @@ export const experiencesData = [
     icon: React.createElement(FaReact),
     date: "2023 - present",
   },
+  {
+    title: "IT trainee",
+    location: "Amsterdam, The Netherlands",
+    description: "I joined Calco where I'm focusing on development and operations.",
+    icon: React.createElement(FaLaptop),
+    date: "2024 - present"
+  }
 ] as const;
 
 export const projectsData = [
